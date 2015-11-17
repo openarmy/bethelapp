@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="home">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Bethel - church directory and private social network software</title>
+
+<link rel="canonical" href="https://church.io/" />
+
+<!-- Bootstrap Core CSS -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/main.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/animate.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/tablesort.css" rel="stylesheet" type="text/css">
+
+<!-- Fonts -->
+<link href="/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<!-- IE8 support for HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+<link href="/assets/img/logo32.png" rel="shortcut icon" type="image/png" />
+<base href="/">
+<!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init("ec079741130e9ff27905d93c8166654c");</script><!-- end Mixpanel -->
+</head>
+
+<body id="page-top" class="index" data-ng-cloak>
+<ng-view></ng-view>
+<script src="/assets/js/jquery-1.10.2.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/classie.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="/assets/js/cbpAnimatedHeader.js"></script>
+<script src="/assets/js/app.js"></script>
+<script src="/assets/js/app.plugin.js"></script>
+<script src="/assets/js/landing.js"></script>
+<script src="/assets/js/jquery.appear.js"></script>
+<script src="/assets/js/freelancer.js"></script>
+
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/angular-route/angular-route.js"></script>
+<script src="/bower_components/firebase/firebase.js"></script>
+<script src="/bower_components/angularfire/dist/angularfire.js"></script>
+<script src="/bower_components/angular.validators/angular.validators.js"></script>
+
+
+<script src="/app.js"></script>
+<script src="/app/config.js"></script>
+<script src="/service.js"></script>
+
+<script src="/components/auth/auth.js"></script>
+<script src="/components/firebase.utils/firebase.utils.js"></script>
+<script src="/components/security/security.js"></script>
+
+<script src="/home/home.js"></script>
+<script src="/register/register.js"></script>
+<script src="/login/login.js"></script>
+<script src="/app/home/home.js"></script>
+<script src="/app/account/account.js"></script>
+<script src="/app/chat/chat.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+
+</html>

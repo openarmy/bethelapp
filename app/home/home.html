@@ -1,0 +1,442 @@
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        BethelApp
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+        <li class="page-scroll">
+          <a href="#directory">Features</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#pricing">Pricing</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#about">About Us</a>
+        </li>
+        <li class="page-scroll" data-ng-hide="loggedIn">
+          <a class="btn btn-flat btn-default btn-md" href="/login">Login</a>
+        </li>
+        <li class="page-scroll" data-ng-show="loggedIn">
+          <a class="btn btn-flat btn-warning btn-md" href="/account">Dashboard</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <img src="/assets/img/logo.png" class="logo" alt="">
+        <div class="intro-text">
+          <div class="name">Bethel</div>
+          <p>Most popular church directory and social networking software for your church</p>
+          <!--<hr class="star-light">-->
+          <ul class="features">
+            <li class="page-scroll"><a href="#directory"><i class="fa fa-star"></i> Directory</a></li>
+            <li class="page-scroll"><a href="#profiles"><i class="fa fa-star"></i> Profiles</a></li>
+            <li class="page-scroll"><a href="#groups"><i class="fa fa-star"></i> Groups</a></li>
+            <li class="page-scroll"><a href="#attendance"><i class="fa fa-star"></i> Attendance</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="directory">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Church Directory</h2>
+        <hr class="star-primary">
+        <img src="/assets/img/screenshots/directory.png" class="img-responsive"/>
+        <p>Eliminate that dated printed directory and cut calls to your church office by making your member directory available on the web!</p>
+        <img src="/assets/img/screenshots/admin-dash-1.png" class="img-responsive">
+        <p>All access is secured by unique log-in using each member's personal email address.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="success" id="profiles">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Profiles</h2>
+        <hr class="star-light">
+        <img src="/assets/img/screenshots/profile.png" class="img-responsive">
+        <p>Give your members a place to upload their own photo, personal testimony, contact info, and more.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="groups">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Groups</h2>
+        <hr class="star-primary">
+        <img src="/assets/img/screenshots/groups-6.png" class="img-responsive"/>
+        <p>Groups connect people in Sunday School classes, Small Groups, or special projects.
+        Use OneBody Groups for classes, special events, trip planning, elder/staff and leadership communication, or anywhere you might use an email mailing list.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="success" id="attendance">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Attendance</h2>
+        <hr class="star-light">
+        <img src="/assets/img/screenshots/attendance.png" class="img-responsive">
+        <p>Keep records of members attendance and back it up to the cloud.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section ng-hide="loggedIn" class="primary" id="pricing">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Pricing</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+  </div>
+<div class="container">
+      <div class="clearfix">
+        <div class="row m-b-xl">
+          <div class="col-sm-3 animated fadeInLeftBig">
+            <div class="panel b-light  m-t">
+              <header class="text-center panel-heading bg-white b-light">
+                <h3 class="m-t-sm">Installer</h3>
+                <p>For those with RoR Skills</p>
+              </header>
+              <ul class="list-group list-unstyled">
+                <li class="list-group-item text-center bg-light lt">
+                  <span class="text-danger font-bold h1">FREE</span>
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Profiles
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Groups
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Attendance Tracking
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Prayer Requests
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Privacy Controls
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> News with RSS
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Document Sharing
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Albums &amp; Pictures
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Bible Verses
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Searchable Directory
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Printed Directory
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Business Directory
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Import and Export Documents
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-danger"></i> Manual Install and Upgrade
+                </li>
+              </ul>
+              <footer class="text-center danger panel-footer">
+                <a href="https://github.com/churchio/onebody/archive/master.zip" target="_blank" class="btn btn-info m-t m-b">Download</a>
+              </footer>
+            </div>
+          </div>
+          <div class="col-sm-3 animated fadeInLeftBig">
+            <div class="panel b-light  m-t">
+              <header class="text-center panel-heading bg-warning b-light">
+                <h3 class="m-t-sm">Metro</h3>
+                <p>Up to 1,000 Members</p>
+              </header>
+              <ul class="list-group">
+                <li class="list-group-item text-center bg-light lt">
+                  <span class="text-danger font-bold h1">$250</span> / year
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Profiles
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Groups
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Attendance Tracking
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Prayer Requests
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Privacy Controls
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> News with RSS
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Document Sharing
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Albums &amp; Pictures
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Bible Verses
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Searchable Directory
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Printed Directory
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Business Directory
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Import and Export Documents
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> Automatic Install and Upgrade
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> Shared Server Hosting
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> <strong>Free Domain Name</strong>
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> <strong>Tithes and Donations</strong><sup><strong class="text-danger">*</strong></sup>
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> Mobile App Design<sup><strong class="text-danger">*</strong></sup>
+                </li>
+              </ul>
+              <footer class="text-center danger panel-footer">
+                <a href="javascript:void(0);" data-ng-click="startReg(1)" class="btn btn-warning m-t m-b">Get Started</a>
+              </footer>
+            </div>
+          </div>
+          <div class="col-sm-3 animated fadeInUp">
+            <div class="panel b-primary">
+              <header class="panel-heading text-center bg-primary">
+                <h3 class="m-t-sm">Mega</h3>
+                <p>Up to 10,000 Members</p>
+              </header>
+              <ul class="list-group">
+                <li class="list-group-item text-center bg-light lt">
+                  <span class="text-danger font-bold h1">$1000</span> / year
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Profiles
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Groups
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Attendance Tracking
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Prayer Requests
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Privacy Controls
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> News with RSS
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Document Sharing
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Albums &amp; Pictures
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Bible Verses
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Searchable Directory
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Printed Directory
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Business Directory
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Import and Export Documents
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> Automatic Install and Upgrade
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> Shared Server Hosting
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> <strong>Free Domain Name</strong>
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> <strong>24x7 Support</strong>
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> <strong>Tithes and Donations</strong><sup><strong class="text-danger">*</strong></sup>
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> Mobile App Design<sup><strong class="text-danger">*</strong></sup>
+                </li>
+              </ul>
+              <footer class="text-center danger panel-footer">
+                <a href="javascript:void(0);" data-ng-click="startReg(2)" class="btn btn-primary m-t m-b">Get Started</a>
+              </footer>
+            </div>
+          </div>
+          <div class="col-sm-3 animated fadeInRightBig">
+            <div class="panel b-light m-t">
+              <header class="panel-heading text-center bg-danger b-light">
+                <h3 class="m-t-sm">Plus</h3>
+                <p>10,000+ Members</p>
+              </header>
+              <ul class="list-group">
+                <li class="list-group-item text-center bg-light lt">
+                  <span class="text-danger font-tiny h1 text-info"><a href="mailto:hello@bethelapp.com">Contact Us</a>
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Profiles
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Groups
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Attendance Tracking
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Prayer Requests
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Privacy Controls
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> News with RSS
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Document Sharing
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Albums &amp; Pictures
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Bible Verses
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Searchable Directory
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Printed Directory
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Business Directory
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Import and Export Documents
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> Automatic Install and Upgrade
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> <strong>Dedicated Hosting</strong>
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> <strong>Free Domain Name</strong>
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> <strong>Dedicated Support</strong>
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> <strong>Tithes and Donations</strong><sup><strong class="text-danger">*</strong></sup>
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> <strong>Unlimited Extensions</strong><sup><strong class="text-danger">*</strong></sup>
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check text-primary"></i> Mobile App Design<sup><strong class="text-danger">*</strong></sup>
+                </li>
+              </ul>
+              <footer class="text-center danger panel-footer">
+                <a href="mailto:hello@bethelapp.com" class="btn btn-danger m-t m-b">Contact Us</a>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+      <small><p  class="text-center text-danger" style="font-size: 1rem">Fields marked with asterisks (*) are not part of the listed cost. They can only be provided subject to agreement.</p></small>
+    </div>
+</section>
+
+<footer id="about">
+  <div class="footer-above">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col col-md-12">
+          <h3>What's Bethel?</h3>
+          <p>Bethel App is a port of the awesome FREE AND OPEN SOURCE SOFTWARE, <a href="https://github.com/churchio" target="_blank"><code>OneBody</code></a> by <a href="http://church.io" target="_blank"><code>CHURCH.IO</code></a>. Church.IO is a community of developers, designers, and users. We believe church software is too expensive and
+          difficult to use, and we're working to change that by creating awesome open source church software.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-below">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          Copyright &copy; 2015 | <a href="/assets/open-source-church-software">List of Open Source Church Software</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="scroll-top page-scroll visible-xs visble-sm">
+  <a class="btn btn-primary" href="#page-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+</div>

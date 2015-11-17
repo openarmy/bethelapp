@@ -1,0 +1,6 @@
+application: bethel-app
+version: 1
+# [START runtime]
+runtime: nodejs
+vm: true
+# [END runtime]

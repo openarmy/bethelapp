@@ -1,0 +1,96 @@
+<div style="min-height: 100vh; background-color: #2c3e50">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        BethelApp
+      </a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+        <li class="page-scroll pull-right" data-ng-hide="loggedIn">
+          <a class="btn btn-flat text-primary btn-md" href="/app">Login</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+<header>
+  <div class="container" id="pricing">
+    <div class="row text-center">
+      <div class="col-lg-4 col-lg-offset-4">
+        <div class="intro-text">
+          <div class="name">Sign In</div>
+          <hr class="star-light">
+          <br>
+          <form name="signup">
+              <div class="row text-center">
+                  <div class="col-md-12">
+                      <div class="form-group">
+                          <input type="email" class="form-control input-lg" placeholder="Email Address">
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="form-group">
+                          <input type="password" class="form-control input-lg" placeholder="Password" >
+                      </div>
+                  </div>
+              </div>
+
+              <button type="submit" class="btn btn-lg btn-default btn-fill pull-right" data-ng-disabled="signup.$invalid">Signup</button>
+              <div class="clearfix"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<footer id="about">
+  <div class="footer-above">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col col-md-12">
+          <h3>What's Bethel?</h3>
+          <p>Bethel App is a port of the awesome FREE AND OPEN SOURCE SOFTWARE, <a href="https://github.com/churchio" target="_blank"><code>OneBody</code></a> by <a href="http://church.io" target="_blank"><code>CHURCH.IO</code></a>. Church.IO is a community of developers, designers, and users. We believe church software is too expensive and
+          difficult to use, and we're working to change that by creating awesome open source church software.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-below">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          Copyright &copy; 2015 | <a href="/assets/open-source-church-software">List of Open Source Church Software</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="scroll-top page-scroll visible-xs visble-sm">
+  <a class="btn btn-primary" href="#page-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+</div>
+</div>
